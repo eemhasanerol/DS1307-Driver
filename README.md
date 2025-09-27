@@ -42,8 +42,8 @@ int main(void) {
     rtc.time.date        = 15;
     rtc.time.month       = 9;
     rtc.time.year        = 25;  // 2025
-    rtc.time.time_format = 0;   // 24h
-    rtc.time.meridiem    = 0;
+    rtc.time.time_format = DS1307_HOUR_24H;
+    rtc.time.meridiem    = DS1307_AM;
 
     if (ds1307_init(&rtc) != DS1307_OK) {
         while (1); /* error */
