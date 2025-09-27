@@ -56,6 +56,5 @@ int main(void) {
                    rtc.time.date, rtc.time.month, rtc.time.year,
                    rtc.time.day_of_week);
         }
-        SysTick_Delay_ms(1000);
     }
 }
