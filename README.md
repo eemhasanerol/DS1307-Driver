@@ -17,6 +17,7 @@ Tested on **STM32F407** with custom low-level drivers.
 
 ## 📌 Usage Example
 ```c
+/* Platform-specific I²C read/write functions must be provided by the user */
 #include "ds1307.h"
 
 ds1307_dev_t rtc = {
